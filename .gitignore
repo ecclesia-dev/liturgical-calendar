@@ -1,1 +1,7 @@
+# Security
+.env
+.secrets/
+*.key
+*.pem
+
 target/
