@@ -1,0 +1,26 @@
+[workspace]
+members = [
+    "crates/calendar-core",
+    "crates/calendar-data",
+    "crates/calendar-api",
+]
+resolver = "2"
+
+[package]
+name = "liturgical-calendar"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "liturgical-calendar"
+path = "src/main.rs"
+
+[dependencies]
+calendar-core = { path = "crates/calendar-core" }
+calendar-api = { path = "crates/calendar-api" }
+tokio = { version = "1", features = ["full"] }
+tracing-subscriber = "0.3"
+
+[dev-dependencies]
+calendar-core = { path = "crates/calendar-core" }
+chrono = { version = "0.4", features = ["serde"] }
