@@ -276,7 +276,7 @@ The calendar engine resolves each day of the year through this pipeline:
 ### 5.1 Base URL
 
 ```
-https://api.example.com/v1
+https://api.ecclesia.dev/v1 (forthcoming)
 ```
 
 ### 5.2 Endpoints
